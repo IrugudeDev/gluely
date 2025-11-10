@@ -57,6 +57,14 @@ The portable executable will be available at `apps/desktop/dist/Gluely Copilot.e
 
 > **Tip**: The repository ships with a GitHub Actions workflow (`Build Windows desktop package`) that runs the same command on every push and uploads the `.exe` as a downloadable artifact.
 
+Need help getting the artifact from GitHub? Follow the detailed walkthrough in [`docs/windows-exe-guide.md`](docs/windows-exe-guide.md) or run the helper script:
+
+```bash
+./scripts/download-latest-win-exe.sh <github-username>/<repo-name>
+```
+
+The script requires the [GitHub CLI](https://cli.github.com/) with `gh auth login` completed.
+
 ## Project Structure
 
 ```
