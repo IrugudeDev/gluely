@@ -1,0 +1,8 @@
+node_modules/
+dist/
+apps/desktop/dist/
+.DS_Store
+out/
+*.log
+*.asar
+release/

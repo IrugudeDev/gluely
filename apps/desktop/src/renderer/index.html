@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gluely Copilot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="overlay" class="panel">
+      <header class="panel__header">
+        <div>
+          <strong>Gluely Copilot</strong>
+          <span class="status" id="status">Connecting…</span>
+        </div>
+        <button id="closeButton" class="ghost">×</button>
+      </header>
+
+      <section class="transcript">
+        <h2>Live Transcript</h2>
+        <div id="transcriptList" class="scrollable"></div>
+      </section>
+
+      <section class="suggestions">
+        <h2>Suggestions</h2>
+        <div id="suggestionList" class="scrollable"></div>
+      </section>
+
+      <section class="notes">
+        <h2>Notes</h2>
+        <textarea id="notes" placeholder="Important notes…"></textarea>
+      </section>
+
+      <footer class="panel__footer">
+        <button id="copyButton">Copy answer</button>
+        <button id="followupButton" class="secondary">Generate follow-up</button>
+      </footer>
+    </div>
+    <script type="module" src="renderer.js"></script>
+  </body>
+</html>

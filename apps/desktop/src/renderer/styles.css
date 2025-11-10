@@ -1,0 +1,135 @@
+:root {
+  color-scheme: light dark;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.panel {
+  width: 360px;
+  height: 540px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 16px;
+  background: rgba(17, 24, 39, 0.88);
+  color: #f9fafb;
+  box-shadow: 0 16px 48px rgba(15, 23, 42, 0.4);
+  padding: 16px;
+  backdrop-filter: blur(14px);
+}
+
+.panel__header,
+.panel__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel__header strong {
+  font-size: 16px;
+}
+
+.status {
+  font-size: 12px;
+  color: #a5b4fc;
+  margin-left: 8px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(120deg, #6366f1, #22d3ee);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.4);
+}
+
+button.secondary {
+  background: rgba(148, 163, 184, 0.25);
+  box-shadow: none;
+}
+
+button.ghost {
+  background: transparent;
+  box-shadow: none;
+  color: #cbd5f5;
+  padding: 4px 8px;
+}
+
+section {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 12px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-height: 0;
+}
+
+section h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #cbd5f5;
+  margin: 0;
+}
+
+.scrollable {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.suggestion {
+  background: rgba(79, 70, 229, 0.22);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+
+.suggestion span {
+  font-size: 13px;
+}
+
+.badge {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: rgba(59, 130, 246, 0.4);
+}
+
+.transcript-item {
+  background: rgba(148, 163, 184, 0.15);
+  border-radius: 10px;
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+  flex: 1;
+  resize: none;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: rgba(15, 23, 42, 0.7);
+  color: #f9fafb;
+  padding: 8px;
+  font-size: 13px;
+}

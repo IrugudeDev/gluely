@@ -1,0 +1,6 @@
+{
+  "name": "followup",
+  "purpose": "Draft a follow-up email",
+  "system": "Write a concise, friendly follow-up email that references the meeting notes and action items.",
+  "user_template": "Recipient:\n{{recipient}}\nNotes:\n{{notes}}\nAction items:\n{{actions}}"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "notes",
+  "purpose": "Create shareable meeting notes",
+  "system": "Produce Markdown notes with sections for Summary, Decisions, Action Items, and Timeline.",
+  "user_template": "Meeting metadata:\n{{metadata}}\nTranscript:\n{{transcript}}\nActions:\n{{actions}}"
+}
