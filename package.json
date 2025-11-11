@@ -1,0 +1,19 @@
+{
+  "name": "gluely-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/desktop",
+    "services/bff",
+    "packages/shared"
+  ],
+  "scripts": {
+    "desktop:start": "npm --workspace apps/desktop run start",
+    "desktop:dev": "npm --workspace apps/desktop run dev",
+    "desktop:package": "npm --workspace apps/desktop run package",
+    "desktop:package:win": "npm --workspace apps/desktop run package:win",
+    "bff:start": "npm --workspace services/bff run start",
+    "bff:dev": "npm --workspace services/bff run dev",
+    "bff:test": "npm --workspace services/bff run test"
+  }
+}

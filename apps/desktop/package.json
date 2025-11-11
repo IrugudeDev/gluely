@@ -1,0 +1,40 @@
+{
+  "name": "@gluely/desktop",
+  "version": "0.1.0",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electronmon .",
+    "package": "electron-builder --publish never",
+    "package:win": "electron-builder --publish never --win portable"
+  },
+  "dependencies": {
+    "@gluely/shared": "file:../../packages/shared",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "electron": "^28.2.0",
+    "electron-builder": "^24.13.3",
+    "electronmon": "^2.0.2"
+  },
+  "build": {
+    "appId": "com.gluely.desktop",
+    "productName": "Gluely Copilot",
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "../../assets"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ]
+    }
+  }
+}
